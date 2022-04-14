@@ -1,0 +1,62 @@
+.container {
+  padding: 50px;
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-top: 150px;
+  background-image: linear-gradient(red, yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: black;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#seconds,
+#tens {
+  font-size: 2em;
+}
+
+#but-start {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: none;
+  font-weight: bold;
+  border-width: black;
+}
+
+#but-stop {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: none;
+  font-weight: bold;
+  border-width: black;
+}
+
+#but-restart {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: none;
+  font-weight: bold;
+  border-width: black;
+}
+
+#but-start:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+#but-stop:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+#but-restart:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}

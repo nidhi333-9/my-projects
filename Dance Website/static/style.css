@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Besley&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lacquer", cursive;
+}
+
+#logo {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-family: "Besley", serif;
+  margin-right: 900px;
+  margin-left: 5px;
+}
+img {
+  filter: invert(1);
+  padding-top: 3px;
+  height: 45px;
+}
+#navbar {
+  background-color: black;
+  padding: 13px 14px;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+}
+
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 11px;
+  font-size: 20px;
+}
+
+#navbar li a:hover {
+  color: white;
+  text-decoration: none;
+  padding: 7px 11px;
+  color: red;
+}
+#introSection {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background: center / contain repeat url("/static/dance.jpg");
+  height: 300px;
+  background-color: red;
+}
+#introSection div.small {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+#missionSection {
+  height: 300px;
+  background-color: azure;
+}
+#missionSection h2 {
+  padding-top: 23px;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+.card-main {
+  display: flex;
+
+  margin: 30px;
+}
+.card {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 25%;
+  margin: 0px 80px 20px 80px;
+  height: 25vh;
+}
+
+.card h3 {
+  text-align: center;
+  margin-top: 1px;
+  font-size: 20px;
+}
+.card-box {
+  margin-top: 15px;
+}
+.card-img {
+  filter: invert(1);
+  height: 80px;
+}
+.card p {
+  font-family: "Besley", serif;
+  font-size: 12px;
+  margin-top: 33px;
+}
+#sponserSection {
+  height: 300px;
+  background-color: rgba(248, 248, 18, 0.774);
+}
+
+#sponserSection h2 {
+  text-align: center;
+  padding-top: 23px;
+  font-size: 30px;
+}
+#sponserSection .spon-box {
+  display: flex;
+  width: 100%;
+  margin: 0 150px 0 150px;
+  padding: 0 125px 0 125px;
+}
+#sponserSection .spon-img {
+  padding: 25px;
+}
+#footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-family: "Besley", serif;
+  text-align: center;
+  font-weight: lighter;
+  font-size: small;
+  padding-top: 70px;
+}

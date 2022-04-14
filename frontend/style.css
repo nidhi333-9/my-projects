@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(21, 50, 54);
+}
+
+.container {
+  display: fixed;
+}
+.hero {
+  display: inline-flex;
+  margin-top: 180px;
+  margin-left: 240px;
+  margin-right: 220px;
+  height: 50vh;
+}
+
+.hero img {
+  height: 50vh;
+}
+
+.text {
+  padding: 80px;
+  width: 30%;
+  background: rgb(79, 20, 156);
+  width: 30%;
+}
+
+.text h2 {
+  font-size: 30px;
+  color: white;
+  background: rgb(79, 20, 156);
+  padding-bottom: 20px;
+}
+.text h2 span {
+  color: rgb(176, 71, 224);
+  background: rgb(79, 20, 156);
+}
+
+.text p {
+  color: rgb(153, 151, 151);
+  background: rgb(79, 20, 156);
+}
+
+.text .review {
+  display: inline-flex;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  background: rgb(79, 20, 156);
+}
+
+.text .review .number {
+  color: azure;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgb(79, 20, 156);
+}
+.text .review .number span {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgb(153, 151, 151);
+  padding-right: 20px;
+  background: rgb(79, 20, 156);
+}
+@media (width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}

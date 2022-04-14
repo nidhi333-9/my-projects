@@ -1,0 +1,63 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src="/static/logo1.png", alt="")
+                | HDA
+            li #[a(href="/") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services ]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection
+     div Welcome to Harry's Dance Academy
+     div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+     h2 Our Mission
+        div.card-main
+            div.card 
+             h3  Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/1.png", alt="" style='width:70px; height:100px')
+                    div.card-content 
+                        p This is the best dance academy of the universe
+            div.card 
+             h3  Dance the way YOU like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/5.png", alt=""  style='width:70px; height:100px')
+                    div.card-content 
+                        p This is the best dance academy of the universe
+            div.card 
+             h3  Expert Teaching
+               div.card-box 
+                   div.card-img 
+                       img(src="/static/6.png", alt=""  style='width:70px; height:100px')
+                   div.card-content 
+                       p This is the best dance academy of the universe
+    section#sponserSection
+     h2 Our sponsors
+        div.spon-box 
+            div.spon-img 
+                img(src="/static/apple.png", alt="" style=' height:100px')
+                 
+            div.spon-img 
+                img(src="/static/hp.png", alt="" style='height:100px')
+                 
+            div.spon-img 
+                img(src="/static/skype.png", alt="" style='height:100px')
+                 
+            div.spon-img 
+                img(src="/static/microsoft.png", alt="" style='height:100px')
+    footer#footer| Copyright &copy 2021 HarryDanceAcademy.com | All rights reserved
+
+   
+    script
+      include ../static/index.js

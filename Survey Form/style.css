@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(81, 204, 142);
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+}
+
+form {
+  background-color: rgb(148, 108, 108);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px;
+}
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 5px;
+
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.submit {
+  background-color: rgb(81, 204, 142);
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-size: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+button:hover {
+  background-color: green;
+  color: white;
+}

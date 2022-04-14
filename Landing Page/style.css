@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Benne", serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 70px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  nav img {
+    width: 75px;
+  }
+  .text-box h1 {
+    font-size: 25px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+  }
+  .nav-links {
+    position: absolute;
+    background: tomato;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+.order {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  height: 100%;
+  margin-top: 200px;
+}
+.items {
+  text-align: center;
+  font-size: 3.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 5.75rem;
+  color: black;
+}
+
+img {
+  display: block;
+  border-radius: 5px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  margin-left: 30px;
+  margin-right: 30px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  overflow: inherit;
+}
+.carousel-wrapper .carousel {
+  transform: translateY(50%, -50%);
+  width: 100%;
+}
+.carousel-wrapper .carousel .carousel-cell {
+  border-radius: 5px;
+  padding: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: white;
+
+  transition: transform 500ms ease;
+}
+.carousel-wrapper .carousel .carousel-cell .more {
+  opacity: 0;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: opacity 300ms ease;
+}
+
+.carousel-wrapper .carousel .carousel-cell .more:hover,
+.carousel-wrapper .carousel .carousel-cell .more:active,
+.carousel-wrapper .carousel .carousel-cell .more:visited,
+.carousel-wrapper .carousel .carousel-cell .more:focus {
+  color: #cfcfcf;
+  text-decoration: none;
+}
+.carousel-wrapper .carousel .carousel-cell .line {
+  position: absolute;
+  top: 2px;
+}
+
+.carousel-wrapper .carousel .carousel-cell.is-selected {
+  transform: scale(1.2);
+}
+.carousel-wrapper .carousel .carousel-cell.is-selected .line {
+  height: 35px;
+}
+
+.carousel-wrapper .carousel .carousel-cell.is-selected .price,
+.carousel-wrapper .carousel .carousel-cell.is-selected .more {
+  opacity: 1;
+}
+
+.carousel-wrapper .flickity-page-dots {
+  display: none;
+}
+.carousel-wrapper .flickity-viewport,
+.carousel-wrapper .flickity-slider {
+  overflow: visible;
+}
+@media only screen and (max-width: 760px) {
+  .carousel-wrapper .carousel .carousel-cell {
+    width: 150px;
+    height: auto;
+    padding: 5px;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .items {
+    font-size: 40px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: -15px;
+  }
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("img/pexels-zen-chung-5529519.jpg");
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+#about {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 20px 30px 40px 15px;
+}
+
+.aboutmyfarm {
+  flex-basis: 31%;
+  color: #fff;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 20px;
+  padding: 5px 20px 15px 20px;
+}
+
+.video {
+  padding: 20px;
+  margin-top: 150px;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 1064px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .video {
+    width: 90%;
+    height: auto;
+    margin-top: -10px;
+    margin-top: 10px 5px 10px 5px;
+  }
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(25, 63, 25);
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+form {
+  background-color: rgba(4, 9, 30, 0.7);
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px;
+}
+
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+.submit {
+  background-color: transparent;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: white;
+  transition: 0.5s;
+}
+
+.submit:hover {
+  background-color: tomato;
+  cursor: pointer;
+}
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 100px 20px 100px;
+  font-size: 40px;
+}

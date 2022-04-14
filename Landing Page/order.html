@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+    
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+        </nav>
+    
+        <div class="text-box">
+            <h1>Our Fresh Products</h1>
+            <p>From Our Farm to Your Doorstep</p>
+            <a href="" class="hero-btn">Order Now!</a>
+        </div>
+    </section>
+    <section class="order">
+    
+        <div class="carousel-wrapper">
+            <h1 class="items">Items We Offer</h1>
+            <div class="carousel" data-flickity>
+                <div class="carousel-cell">
+                    <h3>Peas</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/pea.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>5</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Blackberry</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/blackberry.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>6</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Cabbage</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/cabbage.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>3</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Mixed Fruits</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/mixfruits.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>15</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Mix Vegetables</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/mixveg.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>12</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Papaya</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/papaya.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>5</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Pineapple</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/pineapple.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>6</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Pomegranet</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/pomegranet.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>8</span>
+                    </div>
+                </div>
+    
+                <div class="carousel-cell">
+                    <h3>Tomato</h3>
+                    <a class="more" href="#">Explore More</a>
+                    <img src="img/tomato.jpg" alt="" width="150px" height="200px">
+                    <div class="line"></div>
+                    <div class="price">
+                        <span><sup>$</sup>4</span>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

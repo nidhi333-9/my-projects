@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1 id="title">Student Satisfaction Survey</h1>
+    <p id="description">Dear Student! <br>
+    This short survey can help Uni's management arrange services more effectively.Please, answer it for your better student life!</p>
+    <form id="survey-form">
+        <div class="form-control"><label for="name" id="name-label">Enter your name:</label>
+        <input type="text" id="name" placeholder="Nidhi Sharma"><br></div>
+        <div class="form-control"><label for="email" id="email-label">Enter your email:</label>
+        <input type="email" name="email" id="email" placeholder="xyz@gmail.com"><br></div>
+        <div class="form-control"><label for="number" id="number-label">Enter your age: </label>
+        <input type="number" id="number" min="18" max="25" placeholder="20"><br></div>
+
+       <div class="form-control"> <label for="year">Your class year is...</label>
+        <select name="year" id="dropdown">
+            <option value="first">Freshman</option>
+            <option value="second">Sophomore</option>
+            <option value="third">Senior</option>
+            <option value="fourth">Graduated</option>
+        </select><br></div>
+
+        <div class="form-control"><input type="checkbox" id="accouting" name="major" value="accouting">
+        <label for="accouting">Accounting</label>
+        <input type="checkbox" id="human" name="major" value="human">
+        <label for="human">Human Resources Management</label>
+        <input type="checkbox" id="technology" name="major" value="technology">
+        <label for="technology">Operations Information & Technology</label>
+        <input type="checkbox" id="design" name="major" value="design">
+        <label for="design">Design School</label>
+        <input type="checkbox" id="eco" name="major" value="eco">
+        <label for="eco">Economics Analysis & Policy</label>
+        
+        <input type="checkbox" id="market" name="major" value="market">
+        <label for="market">Marketing</label>
+        <input type="checkbox" id="csc" name="major" value="csc">
+        <label for="csc">Computer Science</label>
+        <input type="checkbox" id="relation" name="major" value="relation">
+        <label for="relation">International Relation</label><br></div>
+
+        <div class="form-control"><label>Would you recommed Your University to others Students?</label><br>
+        <label for="view-1"></label>
+
+        <input type="radio" name="view" id="view-1">Yes</input>
+        <label for="view-2"></label>
+        <input type="radio" name="view" id="view-2">No</input>
+        <label for="view-3"></label>
+        <input type="radio" name="view" id="view-3">Maybe</input><br></div>
+
+        <div class="form-control"><label for="uniview">What do you like the most about YOUR University</label>
+        <textarea name="uniview" id="uniview" cols="30" rows="3"></textarea></div>
+
+        <br>
+
+        <div class="form-control"><label for="unireview">What would you change at YOUR University</label>
+        <textarea name="unireview" id="unireview" cols="30" rows="3"></textarea></div>
+
+        <br>
+
+
+        
+        <button type="submit" class="submit">Submit</button>
+    </form>
+</body>
+</html>

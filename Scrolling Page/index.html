@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Pool</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+    
+  </head>
+  <body>
+    <!-- Home page -->
+    <section>
+      <!-- <video id="vid-bg" poster="girl.png" autoplay muted loop>
+        <source src="main1.mp4" type="video/mp4">
+      </video> -->
+       <video src="main1.mp4" class="vid-bg" poster="girl.png" autoplay loop muted width="100%"></video>
+       <nav class="nav">
+         <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars" onclick="showMenu()"></i>
+        </label> 
+        
+        <label for="" class="logo">Book Pool</label>
+        <ul>
+          <li><a href="../templates/index.html">HOME</a></li>
+          <li>
+             <a href="../templates/store.html">GO TO BOOK STORE<i class="fas fa-caret-down"></i></a><!-- have to increase the padding after hover -->
+             <ul>
+              <li><a href="../templates/lend.html">LEND BOOK</a></li>
+              <li><a href="../templates/borrow.html">BORROW BOOK</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="#">EVENTS</a></li>
+          <li><a href="../templates/faq.html">FAQ's</a></li>
+          <li><a href="../templates/about1.html">ABOUT US</a></li>
+          <li><a href="../templates/contact.html">CONTACT US</a></li>
+          <button class="btn">Sign Up</button>
+        </ul>
+        
+        
+       </nav> 
+      
+      <div class="content">
+        <div class="info">
+          <h2>Welcome <span>to</span><br><span>Book Pool</span></h2>
+          <p>A community for avid book readers!</p>
+        </div>
+        <button class="hero-btn">Get Started</button>
+      </div>
+    </section>
+  
+
+    <!-- Why to join Us -->
+    <div class="container-fluid">
+      <div class="heading">
+        <h1>Why to Join Us</h1>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-header">
+            <img src="../img/community.png" width="50px" alt="" />
+            <h2>Building Community</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              Be a part of community where we believe in sharing,This isn't only a book sharing platform rather it's a bookish community where everyone believes in sharing book.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../img/free.png" width="50px" alt="" />
+            <h2>100% Free</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              No one will asked for the fee, there will be no fee asked from us nor from the lender.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../img/book.png" width="50px" alt="" />
+            <h2>Book Summary</h2>
+          </div>
+          <div class="card-body">
+            <p>
+          Don't have time to read book? Or want to know if the book is worth reading? Grasp the core value of books by reading the summaries.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <img src="../img/money.png" width="50px" alt="" />
+            <h2>Earn Coins</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              Whenever someone borrows your book you will get one credit which you can use to buy new books from our offer section.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Meet Our team Members -->
+    <!-- Have to display on the mobile viewport -->
+    <div class="container">
+      <h1>Our Team Members</h1>
+      <div class="team">
+        <!-- Team 1 -->
+        <div class="our-team">
+          <div class="pic">
+            <img
+              src="https://cdn.discordapp.com/attachments/884810524024524872/885760478855430154/IMG-20210910-WA0004.jpg"
+              alt=""
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="title">Aryan Zaveri</h3>
+            <span class="post">Co-Founder<br>Product Designer</span>
+          </div>
+          <ul class="social">
+            <li><a href="#" class="fab fa-instagram"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-github"></a></li>
+            <li><a href="#" class="fab fa-linkedin"></a></li>
+          </ul>
+        </div>
+
+        <!-- Team 2 -->
+        <div class="our-team">
+          <div class="pic">
+            <img
+              src="https://cdn.discordapp.com/attachments/884810524024524872/885760478607982652/IMG-20210910-WA0008.jpg"
+              alt=""
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="title">Nidhi Kumari</h3>
+            <span class="post">Co-Founder<br>Developer</span>
+          </div>
+          <ul class="social">
+            <li><a href="#" class="fab fa-instagram"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-github"></a></li>
+            <li><a href="#" class="fab fa-linkedin"></a></li>
+          </ul>
+        </div>
+
+        <!-- Team 3 -->
+        <div class="our-team">
+          <div class="pic">
+            <img
+              src="https://cdn.discordapp.com/attachments/884810524024524872/885760478276628500/IMG-20210910-WA0007.jpg"
+              alt=""
+            />
+          </div>
+          <div class="team-content">
+            <h3 class="title">Unnati Nandrekar</h3>
+            <span class="post">Mentor</span>
+          </div>
+          <ul class="social">
+            <li><a href="#" class="fab fa-instagram"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-github"></a></li>
+            <li><a href="#" class="fab fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="hero">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+  
+              <li><a href="#">events</a></li>
+              <li><a href="#">newsletter</a></li>
+              <li><a href="#">sign in</a></li>
+              <li><a href="#">log in</a></li>
+              <li><a href="#">feedback form</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">privacy</a></li>
+              
+              <li><a href="#">rules</a></li>
+             
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>store</h4>
+            <ul>
+             
+              <li><a href="#">lend book</a></li>
+              <li><a href="#">borrow book</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>&#169copyright 2021</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/7f23b78a38.js"
+      crossorigin="anonymous"
+    ></script>
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      let nav = document.querySelector("nav");
+      let windowPosition = window.scrollY > 0;
+      nav.classList.toggle("scrolling-active", windowPosition);
+    });
+  </script>
+  </body>

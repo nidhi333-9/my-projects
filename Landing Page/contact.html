@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  font-family: "Benne", serif;
+}
+
+.header {
+  min-height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box{
+    width: 90%;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+}
+@media (max-width: 700px) {
+  nav img {
+    width: 75px;
+  }
+  .text-box h1 {
+    font-size: 25px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+  }
+  .nav-links {
+    position: absolute;
+    background: tomato;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(25, 63, 25);
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+form {
+  background-color: rgba(4, 9, 30, 0.7);
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px;
+}
+
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+.submit {
+  background-color: transparent;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: white;
+  transition: 0.5s;
+}
+
+.submit:hover {
+  background-color: tomato;
+  cursor: pointer;
+}
+
+.media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 650px 20px 650px;
+    font-size: 40px;
+}
+</style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+    
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+        </nav>
+    
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1 id="title"></h1>
+        <form id="contact-form">
+            <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Nidhi Sharma">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="xyz@gmail.com">
+            </div>
+    
+            <div class="form-control">
+                <label for="view">Ask your Querris</label>
+                <textarea name="view" id="view" cols="30" rows="3"></textarea>
+            </div>
+    
+    
+            <button type="submit" class="submit">Submit</button>
+            
+            
+        </form>
+
+        <footer>
+            <div class="media">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-linkedin"></i>
+            </div>
+            <p>&#169copyright 2021</p>
+        </footer>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    
+    </script>
+</body>
+</html>
